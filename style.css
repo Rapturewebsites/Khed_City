@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary_color: #48b349;
+  /* --secondary_color: rgb(7, 210, 23); */
+  --back: #194d7f;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: red 10px; */
+}
+.card {
+  width: 300px;
+  max-width: 300px;
+  min-height: 490px;
+  position: relative;
+  text-align: center;
+  margin: 32px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border: 5px solid var(--primary_color);
+  /* border: 5px solid var(--back); */
+
+  background-image: url("Backdrop.png");
+  background-size: cover;
+  background-position: center;
+
+  /* background-image: url("https://img.freepik.com/free-vector/white-background-with-diagonal-lines-design_1017-27561.jpg?size=626&ext=jpg&ga=GA1.1.948076401.1679987621&semt=sph"); */
+
+  /* background-image: url("https://img.freepik.com/free-photo/gas-turbine-power-plant-with-blue-sky_1205-1512.jpg?size=626&ext=jpg&ga=GA1.2.1497416503.1630340607&semt=ais"); */
+}
+
+.backdrop {
+  width: 100%;
+}
+
+.line {
+  color: gold;
+  height: 10px;
+}
+.pic-container {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  /* margin: 40px auto 20px; */
+  /* background-color: #3cff00; */
+}
+
+.pic {
+  /* background-color: #3cff00; */
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 2px solid var(--secondary_color);
+  /* margin: auto; */
+  /* margin-left: 10px; */
+  position: relative;
+  justify-content: center;
+  top: 5px;
+
+  /* box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2); */
+}
+.name {
+  color: #3cff00;
+}
+.title {
+  /* color: #3d77c2; */
+  font-size: 14px;
+  /* padding: 8px; */
+}
+.description {
+  font-size: 10px;
+  font-weight: 300;
+
+  /* padding: 1px 20px; */
+}
+
+.designation {
+  font-size: 15px;
+}
+
+.links {
+  margin: 20px 0;
+  padding: 5px;
+  background-color: var(--back);
+  /* box-shadow: rgb(219, 243, 5) 0px 20px 30px -10px; */
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socialmedia {
+  /* background-color: #48b349; */
+  margin: 13px;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  /* background-color: rebeccapurple; */
+}
+
+.logo {
+  margin-left: 10px;
+  height: 40px;
+  margin-top: 10px;
+  /* background-color: #3cff00; */
+}
+
+.MIDC {
+  height: 40px;
+  margin-top: 10px;
+  /* background-color: #3cff00; */
+}
+
+.photo_name {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: rgb(233, 231, 231); */
+  /* box-shadow: 0 13px 26px rgba(134, 134, 134, 0.2),
+    0 3px 6px rgba(216, 216, 216, 0.2); */
+}
+
+.description {
+  background-color: rgb(134, 237, 123);
+  background-color: var(--primary_color);
+  margin-top: 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  color: var(--primary_color);
+
+  /* From https://css.glass */
+  background: rgba(204, 204, 204, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.description:hover {
+  color: white;
+
+  /* From https://css.glass */
+  background: var(--primary_color);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(72, 179, 73, 0.28);
+}
+
+.services {
+  /* background-color: #3cff00; */
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* text-align: left; */
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.list_1 {
+  /* padding-right: 10px; */
+  /* background-color: rgb(43, 244, 11); */
+}
+
+.list_2 {
+  /* padding-right: 10px; */
+  /* background-color: aqua; */
+}
+
+.service_title {
+  padding: 10px;
+  /* padding-top: 10px; */
+  /* background-color: #3cff00; */
+  margin-top: 15px;
+}
+
+.icon {
+  /* background-color: #00abf0; */
+  background-color: #0072a0;
+  color: white;
+  border-radius: 100%;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  /* color: #37c6ff; */
+}
+
+.ln,
+.wa,
+.lo,
+.gm,
+.ph {
+  /* background: rgb(71, 251, 6); */
+  display: inline-block;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0px 4px;
+}
+
+.fb,
+.in,
+.lnn,
+.tw,
+.yt {
+  /* background-color: yellow; */
+  /* background-color: var(--primary_color); */
+  display: inline-block;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0px 4px;
+  color: var(--primary_color);
+  background-color: white;
+  background-color: transparent;
+}
+
+.details {
+  /* background-color: #3cff00; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.details_content {
+  /* background-color: rebeccapurple; */
+  margin: 0px 10px;
+
+  /* font-size: 15px; */
+}
+
+.detals_header {
+  font-size: 1px;
+}
+
+.details_para {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* .btn {
+  background-color: #3cff00;
+} */
+
+.button-1 {
+  background-color: var(--primary_color);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  margin-top: 20px;
+  outline: none;
+  padding: 10px 66px;
+  position: relative;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: var(--back);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: rgb(0, 0, 0); */
+  }
+
+  .container {
+    width: 100vw;
+  }
+}
